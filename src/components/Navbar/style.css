@@ -1,0 +1,27 @@
+#navbar {
+  background-color: rgb(31, 30, 30);
+}
+
+#nav-logo {
+  color: #03B5AC;
+}
+
+#nav-logo:active {
+  color: rgb(131, 209, 233);
+}
+
+#user-icon {
+  padding-right: 7px;
+}
+
+.ui.secondary.pointing.menu .item {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.ui.secondary.pointing.menu .right .item {
+  color: white;
+  font-weight: 200;
+  font-size: 1.3rem;
+  line-height: 50px;
+}

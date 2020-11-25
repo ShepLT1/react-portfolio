@@ -1,13 +1,14 @@
 import React from "react";
 import { Grid, Image } from 'semantic-ui-react';
-import AboutImage from '../../images/placeholder_image.png';
+import Heading from '../../components/Header';
+import AboutImage from '../../images/Slack-cover-photo.jpeg';
 
 function AboutMe() {
 
   return (
     <Grid centered stackable className="main-container">
       <Grid.Row>
-        <h2>About Me</h2>
+        <Heading header="About Me" />
       </Grid.Row>
       <Grid.Row>
         <Grid.Column width={4}>
@@ -27,7 +28,6 @@ function AboutMe() {
             <li>SQL</li>
             <li>Computer Science</li>
             <li>UI/UX Design</li>
-            <li>HTML/CSS/JS</li>
           </ul>
         </Grid.Column>
       </Grid.Row>

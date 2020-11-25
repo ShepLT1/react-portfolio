@@ -3,13 +3,13 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Portfolio from "./pages/Portfolio";
 import AboutMe from "./pages/AboutMe";
 import Contact from "./pages/Contact";
-// import Header from "./components/Header";
-
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div>
       <Router>
-        {/* <Header /> */}
+        <Navbar />
         <Switch>
           <Route path="/" exact>
             <AboutMe />
@@ -21,6 +21,7 @@ function App() {
             <Contact />
           </Route>
         </Switch>
+        <Footer />
       </Router>
     </div>
   );

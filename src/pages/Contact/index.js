@@ -1,16 +1,19 @@
 import React from "react";
 import { Grid, Form, Button, Input, TextArea } from 'semantic-ui-react';
+import Heading from '../../components/Header';
+import Resume from '../../images/Luke-Shepherd-Resume.pdf';
+import "../mainStyle.css"
 
 function Contact() {
 
   return (
     <Grid centered stackable className="main-container">
       <Grid.Row>
-        <h2>Contact</h2>
+        <Heading header="Contact" />
       </Grid.Row>
       <Grid.Row>
         <Grid.Column width={10}>
-          <Form>
+          <Form id="form">
             <Form.Group widths='equal'>
               <Form.Field
                 id='form-input-control-first-name'
@@ -44,7 +47,7 @@ function Contact() {
 
           <br />
 
-          <p><a href="./Assets/Luke-Shepherd-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></p>
+          <p><a href={Resume} target="_blank" rel="noopener noreferrer">Resume</a></p>
 
           <p><a href="https://github.com/ShepLT1" target="_blank" rel="noopener noreferrer">Github Profile</a></p>
 
